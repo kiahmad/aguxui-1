@@ -8,6 +8,18 @@
 <link rel="stylesheet" href="lib/w3.css">
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="lib/Web_1920___1.css"/>
 <script id="applicationScript" type="text/javascript" src="lib/Web_1920___1.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            font-size: medium;
+        }
+        .style2
+        {
+            text-align: center;
+            text-decoration: underline;
+        }
+         
+    </style>
 </head>
 <body>
 <div id="Web_1920__1">
@@ -44,13 +56,13 @@
       	<div class="w3-dropdown-hover">
       	<button class="w3-button w3-yellow">Head of Office & DDO</button>
       	<div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="ddonoti.html" class="w3-bar-item w3-button">Notifications</a>
-        <a href="part2a.html" class="w3-bar-item w3-button">Part IIA</a>
-	<a href="part2b.html" class="w3-bar-item w3-button">Part IIB</a>
-	<a href="part2c.html" class="w3-bar-item w3-button">Part IIC</a>
-	<a href="annexure1.html" class="w3-bar-item w3-button">Annexure I</a>
-	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure II</a>
-	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure III</a>
+        <a href="#" class="w3-bar-item w3-button">Notifications</a>
+        <a href="#" class="w3-bar-item w3-button">Part IIA</a>
+	<a href="#" class="w3-bar-item w3-button">Part IIB</a>
+	<a href="#" class="w3-bar-item w3-button">Part IIC</a>
+	<a href="#" class="w3-bar-item w3-button">Annexure I</a>
+	<a href="#" class="w3-bar-item w3-button">Annexure II</a>
+	<a href="#" class="w3-bar-item w3-button">Annexure III</a>
       	</div>
 	</div>
 
@@ -59,8 +71,8 @@
       	<div class="w3-dropdown-hover">
       	<button class="w3-button w3-yellow">Office of the AG</button>
       	<div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="agveri.html" class="w3-bar-item w3-button">Verification</a>
-        <a href="agauth.html" class="w3-bar-item w3-button">Authorization</a>
+        <a href="#" class="w3-bar-item w3-button">Verification</a>
+        <a href="#" class="w3-bar-item w3-button">Authorization</a>
 	<a href="#" class="w3-bar-item w3-button">PPO issuance</a>
       	</div>
 	</div>
@@ -83,39 +95,31 @@
 	<div id="Scroll_Group_2">
 <!---------------------------------------------------------------part 1 ------------->
 <h1>Part1, page 3/3 </h1><br>
-		<p><center>GOVERNMENT OF TELANGANA
-[G.O.Ms.No.263 Fin & Plg. (FW.PSC) Dept., dt.23.11.98]
-FORM OF APPLICATION FOR SERVICE PENSION/ FAMILY
-PENSION/RETIREMENT GRATUITY/SERVICE GRATUITY/COMMUTATION
-(To be furnished in duplicate)
-Part I
-(Information to be furnished by the Government Servant / Applicant)
-(The Pension Sanctioning Authority shall forward the application duly processed to the AG
-(A&E) / LF Authority within a period of 30 days)
-</center></p><p><br><br></p>
-		<h4>To be filled by Head of Office</h4>
-		<br><table>
+		<p><br><br></p>
+		<h4 class="style2"><strong class="style1">To be filled in by the Head of Office</strong></h4>
+		<br>
+        <table>
 		<tr>
-		<td>1</td>
+		<td>1.</td>
 		<td>Applicant for pension / gratuity etc. in Part-I is received on
 _______________________ (Date to be recorded). </td></tr>
-		<tr><td>2</td>
+		<tr><td>2.</td>
 		<td>Certified that the person/persons mentioned by the Government servant/Applicant in
 item 7 of Part I are legally entitled to receive the pension/share in gratuity.  </td></tr>
-		<tr><td>3</td>
-		<td>Guardianship certificate : (to be filled in wherever necessary)
+		<tr><td>3.</td>
+		<td align="left">Guardianship certificate : (to be filled in wherever necessary)
 This is to certify that the following minors of the deceased Government Servant Late
 Sri/Smt._____________________________________ is/are under the guardianship
 of Sri/Smt. ____________________________________________________  </td>
 		</tr>
 		</table>
 		<br>
-		<table>
+		<table style="width: 1157px">
 		<tr>
-      		<td>S.No.</td>
-      		<td>Name of the Applicant </td>
-      		<td>Date of Birth</td>
-		<td>Relationship</td>
+      		<td><b>S.No.</b></td>
+      		<td><b>Name of the Applicant </b> </td>
+      		<td><b>Date of Birth</b></td>
+		<td><b>Relationship</b></td>
     		</tr>
 		<tr>
       		<td>1</td>
@@ -123,12 +127,21 @@ of Sri/Smt. ____________________________________________________  </td>
       		<td><input type="date" class="form-control" id="Txt_dt" /></td>
 		<td></td>
     		</tr>
-		</table><br>
+		</table>
+
+        <br>
 		<input type="button" value="Add more"/>
 		
-		<table><tr><td>Place:</td></tr><tr><td>Date:</td><td><input type="date" class="form-control" id="Txt_dt" /></td>
-		<td>Signature of the Government Servant / Applicant</td></tr>
+		<table>
+        <tr><td>Place:</td><td colspan="3"></td></tr>
+        <tr><td>Date:</td><td><input type="text" class="form-control" id="Txt_dt" /></td>
+		<td>Signature of the Head of the office</td><td><input type="text" class="form-control" id="Text1" /></td></tr>
+
+
+
+
 		</table>
+		<p><a href="blogin.html">Exit Submission .. </a></br></p>
 		<p><a href="home.html">Final Submission .. </a><br></p>
 		<svg class="Line_2" viewBox="0 0 1920 1">
 			<path id="Line_2" d="M 0 0 L 1920 0">

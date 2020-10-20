@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="lib/w3.css">
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="lib/Web_1920___1.css"/>
 <script id="applicationScript" type="text/javascript" src="lib/Web_1920___1.js"></script>
+    <style type="text/css">
+        table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+        
+    </style>
 </head>
 <body>
 <div id="Web_1920__1">
@@ -44,13 +54,13 @@
       	<div class="w3-dropdown-hover">
       	<button class="w3-button w3-yellow">Head of Office & DDO</button>
       	<div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="ddonoti.html" class="w3-bar-item w3-button">Notifications</a>
-        <a href="part2a.html" class="w3-bar-item w3-button">Part IIA</a>
-	<a href="part2b.html" class="w3-bar-item w3-button">Part IIB</a>
-	<a href="part2c.html" class="w3-bar-item w3-button">Part IIC</a>
-	<a href="annexure1.html" class="w3-bar-item w3-button">Annexure I</a>
-	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure II</a>
-	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure III</a>
+        <a href="#" class="w3-bar-item w3-button">Notifications</a>
+        <a href="#" class="w3-bar-item w3-button">Part IIA</a>
+	<a href="#" class="w3-bar-item w3-button">Part IIB</a>
+	<a href="#" class="w3-bar-item w3-button">Part IIC</a>
+	<a href="#" class="w3-bar-item w3-button">Annexure I</a>
+	<a href="#.htm" class="w3-bar-item w3-button">Annexure II</a>
+	<a href="#" class="w3-bar-item w3-button">Annexure III</a>
       	</div>
 	</div>
 
@@ -59,8 +69,8 @@
       	<div class="w3-dropdown-hover">
       	<button class="w3-button w3-yellow">Office of the AG</button>
       	<div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="agveri.html" class="w3-bar-item w3-button">Verification</a>
-        <a href="agauth.html" class="w3-bar-item w3-button">Authorization</a>
+        <a href="#" class="w3-bar-item w3-button">Verification</a>
+        <a href="#" class="w3-bar-item w3-button">Authorization</a>
 	<a href="#" class="w3-bar-item w3-button">PPO issuance</a>
       	</div>
 	</div>
@@ -82,80 +92,132 @@
 	
 	<div id="Scroll_Group_2">
 <!---------------------------------------------------------------part 1 ------------->
-<h1>Part1, page 2/3</h1><br>
-		<p><center>GOVERNMENT OF TELANGANA
-[G.O.Ms.No.263 Fin & Plg. (FW.PSC) Dept., dt.23.11.98]
-FORM OF APPLICATION FOR SERVICE PENSION/ FAMILY
-PENSION/RETIREMENT GRATUITY/SERVICE GRATUITY/COMMUTATION
-(To be furnished in duplicate)
-Part I
-(Information to be furnished by the Government Servant / Applicant)
-(The Pension Sanctioning Authority shall forward the application duly processed to the AG
-(A&E) / LF Authority within a period of 30 days)
-</center></p><p><br><br></p>
-		<br>
+<h1>Part1, page 2/3</h1>
+
 		<table>
 		<tr>
-		<th>7 List of family members</th>
-		</tr>
-		<tr>
-      		<td>(a)</td>
-      		<td> (b)</td>
-      		<td>(c)</td>
-		<td>(d)</td>
-		<th>Marital / Employment status of the children
-of the applicant / deceased Govt. Servant</th>
-    		</tr>
-		<tr>
-      		<td>S.No.</td>
-      		<td>Name of family member</td>
-      		<td>Date of Birth</td>
-		<td>Relationship with government servant</td>
-		<td>Married / un Married /date of marriage (if married)</td>
-		<td>Wether employed or not give details</td>
-    		</tr>
-		<tr>
-		<td>1</td>
-		<td></td><td><input type="date" class="form-control" id="Txt_dt" /></td><td></td><td></td><td></td>
-		</tr>
-		</table><br>
-		<input type="button" value="Add more"/>
-		<h4>Instructions :</h4>
-		<table>
-		<tr>
-		<td>1</td>
-		<td>The Government servant is instructed to fill up the pro-forma very carefully as the
+        <td><strong>7</strong></td>
+		<td><strong>List of family members</strong></td>
+        </tr>
+	      <tr><td colspan="2">  
+           <table class="table" cellpadding="1" cellspacing="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">(a)</th>
+                            <th scope="col">(b)</th>
+                            <th scope="col">(c)</th>
+                            <th scope="col">(d)</th>
+                            <th scope="col" colspan="2">Marital/Employment status of the children of the applicant/ deceased Government servant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SL No.</td>
+                            <td>
+                                <label>Name of the family member</label></td>
+                            <td>
+                                <label>Date of Birth</label></td>
+                            <td>
+                                <label>Relationship with Government Servant</label></td>
+                            <td>
+                                <label>Married or unmarried <br />Date of Marriage if married:</label></td>
+                            <td>
+                                <label>Whether employed or not<br /> Give details of employment</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" onkeypress="return CheckDecimal(event)"
+                            id="Txt_sno" /></td>
+
+                            <td>
+                                <input type="text" class="form-control" id="Txt_Name" /></td>
+
+                            <td>
+                                <input type="date" class="form-control" id="Txt_DOB" /></td>
+
+                            <td>
+                             <input type="radio" id="Radio2" name="Son" value="Spouse" />
+                                <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio6" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio7" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio8" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio9" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio10" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio11" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio12" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                                
+                              
+                            </td>
+                            <td>
+                                <input type="radio" id="Radio1" name="Y" value="Y" />
+                                <label for="Y">Yes</label>
+                                <input type="radio" id="Radio4" name="Y" value="N" />
+                                <label for="N">No</label><br />
+                                <input type="date" class="form-control" id="Textarea4" />
+                            </td>
+                            <td>
+                                <input type="radio" id="Radio3" name="Yes" value="Yes" />
+                                <label for="Yes">Yes</label>
+                                <input type="radio" id="Radio5" name="Yes" value="No" /><label for="No">No</label><br />
+                                <input type="text" class="form-control" id="Textarea5" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table></td></tr>
+                <tr><td colspan="3"><input type="button" value="Add more"/></td></tr>
+                <tr><td colspan="3"><h4><strong>Instructions :</strong></h4></td></tr>
+                <tr><td></td>
+                <td>1.The Government servant is instructed to fill up the pro-forma very carefully as the
 data furnished is vital for sanction of family pension. He / She may note that
-alterations of the data furnished, at a later date is not permissible. </td></tr>
-		<tr><td>2</td>
-		<td>The “family” for the purpose mean “wife” or “husband” as the case may be, “sons”
+alterations of the data furnished, at a later date is not permissible.<br />
+2.The “family” for the purpose mean “wife” or “husband” as the case may be, “sons”
 and “unmarried daughters” as laid down in Rule 50 (12) (for Family Pension) and
-Rule 46(5) (for gratuity) of A.P. Revised Pension Rules 1980. </td></tr>
-		<tr><td>3</td>
-		<td>In case of death while in service of Government servant, the answer „Married‟ in
+Rule 46(5) (for gratuity) of A.P. Revised Pension Rules 1980.<br />
+3.In case of death while in service of Government servant, the answer „Married‟ in
 case of daughters will be understood that the daughter is already married as on
-the date of death of the Government servant. </td>
-		</tr>
-		</table>
-		<table><th>Declarations</th>
-		<tr>
-		<td>1</td>
-		<td>I undertake to refund the amount of Pension, Gratuity and Commutation, if it is found
-subsequently to be in excess of the amount to which I was entitled under the Rules.  </td></tr><tr>
-		<td>2</td>
-		<td>I solemnly affirm that the particulars given by me in Part-I at item 12 are correct and
+the date of death of the Government servant.
+</td>
+                </tr>
+                <tr>
+                <td></td>
+                <td><strong>DECLARATION</strong></td>
+                </tr>
+                <tr><td></td><td>1.I undertake to refund the amount of Pension, Gratuity and Commutation, if it is found
+subsequently to be in excess of the amount to which I was entitled under the Rules.<br />
+2.I solemnly affirm that the particulars given by me in Part-I at item 12 are correct and
 true to the best of my knowledge. If found false in future, I am liable for suitable
-action as may be taken by the Government. 
- </td></tr><tr>
-		<td>3</td>
-		<td>The particulars given above are correct and true to the best of my knowledge. If
+action as may be taken by the Government. <br />
+3.The particulars given above are correct and true to the best of my knowledge. If
 found false in future I may be liable for any action that may be taken by the
-Government. </td>
-		</tr>
+Government.<br />
+
+</td></tr>
+<tr><td></td>
+<td>Place</td>
+
+</tr>
+<tr><td></td>
+<td>Date</td>
+
+</tr>
+<tr><td></td>
+
+<td class="w3-right-align">Signature of the Government Servant / Applicant</td>
+</tr>
 		</table>
-		<table><tr><td>Place</td></tr><tr><td>Date</td><td><input type="date" class="form-control" id="Txt_dt" /></td><br></td>
-		<td>Signature of the Government Servant / Applicant</td></tr>
-		</table>
+	
+		
+		<p><a href="blogin.html">Exit Submission .. </a></br></p>
 		<p><a href="part1p3.html">Continue Submission .. </a><br></p>
 		<svg class="Line_2" viewBox="0 0 1920 1">
 			<path id="Line_2" d="M 0 0 L 1920 0">
