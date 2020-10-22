@@ -8,6 +8,15 @@
 <link rel="stylesheet" href="lib/w3.css">
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="lib/Web_1920___1.css"/>
 <script id="applicationScript" type="text/javascript" src="lib/Web_1920___1.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").click(function(event){
+    event.preventDefault();
+	alert("An unauthorized use of Application")
+  });
+});
+</script>
 </head>
 <body>
 <div id="Web_1920__1">
@@ -101,9 +110,11 @@
 		<button class="w3-btn w3-green">Submit</button>
 		<button class="w3-btn w3-red">Cancel</button>
 		</form>
-		<!----p>*Note :- Field marked with asterisk are mandatory
-		</p-----><p>Logged by Shri./Ms.</p>
-		<p><a href="agauthp1.html">Continue Submission .. </a><br></p>
+		<br>
+		<p><button class="w3-button w3-btn w3-black" onclick="myFunction1()"> Back </button>
+		<button class="w3-button w3-btn w3-orange" onclick="myFunction2()"> Next </button>
+		<button class="w3-button w3-btn w3-red" onclick="myFunction3()"> Exit </button><br><br></p>
+		
 		<svg class="Line_2" viewBox="0 0 1920 1">
 			<path id="Line_2" d="M 0 0 L 1920 0">
 			</path>
@@ -113,7 +124,20 @@
   		<p>Designed and developed by NIC Telangana State Centre, Hyderabad</p>
 		</footer>
 	</div>
-
+		<script>
+			function myFunction1() {
+  				
+				document.location.href="agauth.html";
+					}
+			function myFunction2() {
+  				
+				document.location.href="agauthp1.html";
+					}
+			function myFunction3() {
+  				
+				document.location.href="home.html";
+					}
+		</script>
 </div>
 </body>
 </html>
